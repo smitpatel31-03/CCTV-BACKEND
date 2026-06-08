@@ -1,0 +1,24 @@
+{
+  "name": "cctv-service-dashboard-api",
+  "version": "1.0.0",
+  "description": "Production-ready RESTful API for CCTV & Hardware Installation Service Agency Dashboard",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.js",
+    "start": "bun src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.8.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.4.1",
+    "express-validator": "^7.2.0",
+    "node-cron": "^3.0.3"
+  }
+}
