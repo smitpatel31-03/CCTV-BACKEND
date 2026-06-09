@@ -62,6 +62,14 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // ── Health Check ─────────────────────────────────────────────────────────────
+app.get('/', (_req, res) => {
+  res.json({
+    success: true,
+    message: 'CCTV Service Dashboard API is running',
+    path: '/api/health',
+  });
+});
+
 app.get('/api/health', (_req, res) => {
   res.json({
     success: true,

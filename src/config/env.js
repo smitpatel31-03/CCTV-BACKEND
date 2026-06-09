@@ -83,15 +83,15 @@ validateProductionSecrets();
 
 /** @type {EnvConfig} */
 export const env = Object.freeze({
-  PORT: parseInt(process.env.PORT, 10) || 5000,
-  MONGODB_URI: process.env.MONGODB_URI || "mongodb+srv://smitp310303_db_user:niRD%40MU87bc5C7%21@cluster0.bmqqzma.mongodb.net/?appName=Cluster0",
-  JWT_SECRET: process.env.JWT_SECRET || 'default_dev_secret_change_me',
-  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '15m',
-  REFRESH_TOKEN_SECRET: process.env.REFRESH_TOKEN_SECRET || process.env.JWT_SECRET || 'default_refresh_secret_change_me',
-  REFRESH_TOKEN_EXPIRES_IN: process.env.REFRESH_TOKEN_EXPIRES_IN || '7d',
-  NODE_ENV: process.env.NODE_ENV || 'development',
-  CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:3000',
-  OWNER_KEY: process.env.OWNER_KEY || 'adftryr8uuv68g',
+  PORT: parseInt(process.env.PORT, 10),
+  MONGODB_URI: process.env.MONGODB_URI,
+  JWT_SECRET: process.env.JWT_SECRET,
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN ,
+  REFRESH_TOKEN_SECRET: process.env.REFRESH_TOKEN_SECRET || process.env.JWT_SECRET,
+  REFRESH_TOKEN_EXPIRES_IN: process.env.REFRESH_TOKEN_EXPIRES_IN,
+  NODE_ENV: process.env.NODE_ENV,
+  CORS_ORIGIN: process.env.CORS_ORIGIN,
+  OWNER_KEY: process.env.OWNER_KEY,
 
   // Password reset token expiry (default: 10 minutes)
   PASSWORD_RESET_EXPIRES_MS: parseInt(process.env.PASSWORD_RESET_EXPIRES_MS, 10) || 10 * 60 * 1000,
